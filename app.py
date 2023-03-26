@@ -1,3 +1,6 @@
+#Main flask application file.
+
+
 # Import required modules
 import os
 from flask import Flask, request, redirect, url_for, render_template
