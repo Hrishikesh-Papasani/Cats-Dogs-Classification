@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label.button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #4CAF50;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    button.button {
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #008CBA;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    img#preview {
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+    <meta charset="UTF-8">
+    <title>Cat/Dog Classifier</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cat/Dog Classifier</h1>
+        <form method="POST" enctype="multipart/form-data" action="{{ url_for('predict') }}">
+            <!-- <form method="POST" enctype="multipart/form-data" action="templater/predict.html"> -->
+            <label for="file-upload" class="button">
+                Upload File
+            </label>
+            <input id="file-upload" type="file" name="file" accept=".jpg, .jpeg, .png" onchange="loadFile(event)">
+            <button type="submit" class="button">Predict</button>
+        </form>
+        <img id="preview" alt="Uploaded Image">
+    </div>
+
+    <script>
+        // JavaScript code to display preview of the uploaded image
+        var loadFile = function(event) {
+            var preview = document.getElementById('preview');
+            preview.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    
+</body>
+</html>
+
