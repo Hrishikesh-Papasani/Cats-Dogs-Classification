@@ -18,3 +18,10 @@ Prediction
 
 
 Refer [colab notebook](https://colab.research.google.com/drive/1IVrjVchiHuW0K-pkUEVhu-WJegEzZnWT#scrollTo=-LmVbyRScsJm) for Classification model construction.
+
+
+## Author
+Made by **Hrishikesh Reddy Papasani**
+Connect on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/hrishikesh-reddy-papasani-02110725a/)
+<br>
+Contact at hrpapasani@gmail.com
