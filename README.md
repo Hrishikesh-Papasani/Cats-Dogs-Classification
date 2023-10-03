@@ -15,3 +15,6 @@ After uploading file
 Prediction
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/128984594/227791329-de164f35-1ddc-49d6-ad7e-93dbcbb99082.png">
+
+
+Refer [colab notebook](https://colab.research.google.com/drive/1IVrjVchiHuW0K-pkUEVhu-WJegEzZnWT#scrollTo=-LmVbyRScsJm) for Classification model construction.
